@@ -1,0 +1,277 @@
+#search-button {
+    background-color: #097fae;
+    color: white;
+    z-index: 0;
+}
+
+.bg-darkgrey {
+    background-color: #ecedef;
+}
+
+.bg-darkblue {
+    background-color: rgb(7, 78, 102);
+}
+.fa-star{
+    color:  #f4ab3f;
+}
+
+/* css for the hotel section */
+.hotel-media{
+    position: relative;
+    overflow: hidden;
+    
+}
+.hotel-media img{
+    max-width: 200px;
+    max-height: 200px;
+}
+.hotel-media i.fa-heart{
+    position: absolute;
+    top:10px;
+    left: 10px;
+}
+span.img-pagin{
+    position: absolute;
+    left: 0;
+    bottom: 15px;
+    font-size: 0.75rem;
+    opacity: 0.75;
+}
+
+.forSectionDeal-website{
+    font-size: 10px;
+    margin: 0;
+}
+
+#hotelRatings{
+    background-color: rgb(64, 107, 21);
+    color: white;
+    border-radius: 2px;
+    padding: 2px;
+    text-align:fixed;
+}
+
+/* css for titles to be seen */
+#priceMessage{
+    color: white;
+    font-size: 14px;
+}
+.filterBox{
+    border: 0.1px solid lightgrey;
+}
+#sort{
+    display: flex; 
+    flex-direction: row;
+    
+}
+#sortText{
+    white-space: nowrap;
+    font-size: 12px;
+}
+div#type{
+    font-size: 10px;
+    color: white;
+    white-space: nowrap;
+    padding: 0;
+}
+div#types{
+    font-size: 10px;
+    color: white;
+    white-space: nowrap;
+    padding: 0;
+    
+}
+
+div#guest{
+    font-size: 10px;
+    color: white;
+    white-space: nowrap;
+    padding: 0;
+}
+div#locations{
+ font-size: 10px;
+    color: white;
+    white-space: nowrap;
+    padding: 0;
+
+}
+
+#forPrice{
+    display: flex;
+    flex-direction: row;
+    font-size: 10px!important;
+    color: white;
+    justify-content: space-between;
+}
+#labelPrice{
+    padding-right: 20px;
+    padding-left:0px ;
+
+    
+}
+select {
+    font-size: 14px;
+}
+#rating,#location,#guestRating{
+    background-color: rgb(7, 78, 102);
+    color: white;
+    border: 0;
+    
+    box-shadow: none; 
+}
+
+
+
+  
+  .map2 {
+    height: 400px;
+    width: 100%;
+}
+
+/* MAP & SORT SECTION  */
+
+
+/* deal css */
+button.col-12.btn.btn-success {
+    white-space: nowrap;
+    font-size: 12px;
+}
+.deal1{
+    font-size: 8px;
+    height: 120%;
+    width: 90%;
+    
+    
+}
+.deal1:hover{
+    font-size: 8px;
+    
+    background-color: #e6f4f7;
+    color: #3681a1;
+}
+.dealsDetail{
+    font-size: 12px;
+    
+}
+.deals{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+/* Chekin - Checkout margin */
+.checkinBox,.checkoutBox{
+    margin-bottom: 0px;
+}
+input.checkinBox{
+    border: none;
+    border-left: 5px solid #097fae;
+}
+label.checkinBox{
+    border-left: 5px solid #097fae;
+    font-size: 11px;
+}
+
+input.checkoutBox{
+    border: none;
+    
+    border-left: 5px solid #f58d0a;
+}
+label.checkoutBox{
+    border-left: 5px solid #f58d0a;
+    font-size: 11px;
+}
+
+input#checkin {
+    font-size: 12px;
+}
+input#checkout {
+    font-size: 12px;
+}
+.checkBoxWrapper{
+    display: flex;
+    flex-direction: column;
+    max-height: 15px;
+    margin-bottom: 20px;
+}
+/* end of check in check out css */
+select#typeOfRoom {
+    font-size: 13px;
+  margin: 1px;
+    
+    padding: 0px;
+}
+
+
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+    height: 30%;
+}
+  
+  /* The Close Button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+
+/* MAP & SORT SECTION  */
+
+#mapsort{
+    display: flex; 
+    flex-direction: row;
+    align-items:center;
+    white-space: nowrap;
+}
+#sort{
+    display: flex; 
+    flex-direction: row;
+    
+}
+#sortText{
+    white-space: nowrap;
+    font-size: 12px;
+}
+#myBtn{
+    font-size: 14px;
+    display: flex;
+
+  
+}
+  /* Background image for view map button */
+#map{
+    display: flex;
+  padding-top: 12px;
+
+  
+    flex-direction: row;
+    background-image: url(https://compote.slate.com/images/548bf4ee-8d60-4dca-b5f2-f3a970ceb8d5.png);
+}

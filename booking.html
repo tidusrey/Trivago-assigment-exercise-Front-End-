@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <link rel="stylesheet" href="/booking.css">
+    <title>Booking</title>
+    <style>
+
+    </style>
+</head>
+
+<body class="bg-light ">
+    <div class="container bg-white border shadow mt-3">
+        <!-- Search section -->
+        <section id="search-panel" class="row bg-darkblue">
+
+            <div class="input-group m-2">
+                <div class="input-group-prepend">
+                    <span class="input-group-text ">
+                        <i class="fas fa-search"></i>
+                    </span>
+                </div>
+
+                <input list="cities" name="city-choice" class="form-control" aria-label="City"
+                    placeholder="select a city" />
+                <datalist id="cities">
+
+
+                </datalist>
+                <div class="input-group-append">
+                    <!-- <span class="input-group-text">.00</span> -->
+                    <button id="search-button" class="btn px-5">Search</button>
+                </div>
+
+            </div>
+
+        </section>
+        <!-- Dates & Rooms  -->
+        <section id="datesroom" class="row bg-darkblue">
+            <div class="col-4 checkBoxWrapper">
+                <label for="checkin" class="bg-white col-12 checkinBox">check in</label>
+                <input type="date" class="col-12 checkinBox" name="checkin" id="checkin" value="">
+            </div>
+            <div class="col-4 checkBoxWrapper">
+                <label for="checkout" class="bg-white col-12 checkoutBox">check out</label>
+                <input type="date" class="col checkoutBox" name="checkout" id="checkout" value="">
+            </div>
+            <div id="roomtypes" class="col-4">
+                <div id="types" class="col-12">Type of rooms</div>
+                <select class="col-12" name="roomtypes" id="typeOfRoom">
+                    
+                    <option value="">Our recommendations</option>
+                </select>
+            </div>
+        </section>
+        <!-- Filters -->
+        <section id="filters" class="row bg-darkblue ">
+            <div class="col-4 filterBox">
+
+
+                <div class="col-12 container" id="forPrice">
+                </div>
+                <sup id="priceMessage"> 0 &euro;</sup>
+                <input class="priceBar" id="price" type="range" min="0" max="1500" value="1500" />
+            </div>
+            <div class="col-2 filterBox">
+                <div id="type" class="col-12">Property type</div>
+                <select class="col-12" name="rating" id="rating">
+                    <option value="">All</option>
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </div>
+            <div class="col-2 filterBox">
+                <div id="guest" class="col-12 ">Guest Rating</div>
+                <select class="col-12" name="guestRating" id="guestRating">
+                    <option value="">All</option>
+                    <option value="0">0-1</option>
+                    <option value="1">2-5</option>
+                    <option value="2">6-7.9</option>
+                    <option value="3">7-8.4</option>
+                    <option value="4">8.5-10</option>
+                </select>
+            </div>
+            <div class="col-4 filterBox">
+                <div id="locations" class="col-12">Location</div>
+                <select class="col-12" name="location" id="location">
+                    <option value="">All</option>
+                </select>
+            </div>
+        </section>
+       <!-- Map & Sort  -->
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+
+
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close" style="text-align: right;"> &times;</span>
+                <div id="maps"></div>
+
+
+
+            </div>
+
+        </div> 
+        
+        <section id="mapsort" class="row map justify-content-between">
+            <div id="map" class="ml-3 mt-1 mb-3 col-2"> &nbsp;
+                <!-- Open The Modal -->
+                <button id="myBtn" style="margin-top: 3px;" class=" mb-3 form-control btn-light"><b>View Map</b></button>
+            </div>
+
+            <!-- Sort by -->
+            <div id="sort" class="mr-3 ml-5 px-5 mb-3">
+                <span id="sortText" class="mr-2"> Sort by </span>
+                <select class="col-12 form-control" name="recommendation" id="recommendation">
+                    <option value="">Our recommendations</option>
+                </select>
+            </div>
+        </section>
+        <!-- Hotel display from json  -->
+        <section id="hotels" class="row bg-light">
+          
+        </section>
+
+
+
+        
+    </div>
+
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="booking.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+
+
+ 
+
+    <script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.1.1/build/ol.js"></script>
+</body>
+
+</html>
